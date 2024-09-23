@@ -1,0 +1,14 @@
+pipeline {
+	agent any
+	stages {
+		stage('construct') {
+		steps {
+			echo 'a building'
+			sh '''
+			mkdir BUILDING
+			cd BUILDING
+			touch hall kitchen room
+			'''}
+			}
+			}
+			}
